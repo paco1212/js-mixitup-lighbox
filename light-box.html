@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href="css/lightbox.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<title>Lightbox | Francisco Gallardo</title>
+	</head>
+	<body>
+		<button type="button" data-filter="all">View All Photos</button>
+		<button type="button" data-filter=".category-brazil">Brazil Photos</button>
+		<button type="button" data-filter=".category-chile">Chile Photos</button>
+		<button type="button" data-filter=".category-usa">USA Photos</button>
+		<button type="button" data-filter="None">View None</button>
+
+
+		<div class = "gallery container">
+			<a href="myImages/brazil-cristo-redentor.JPG" data-lightbox="travel-images" data-title="Visitng Crist the Redeemer in Rio de Janeiro, Brazil, South America" class="mix category-brazil" data-order="1">
+				<img src="myImages/brazil-cristo-redentor.JPG" alt="Visitng Crist the Redeemer in Rio de Janeiro, Brazil, South America">
+			</a>
+
+			<a href="myImages/brazil-mural.JPG" data-lightbox="travel-images" data-title="Visiting the Escadaria Selaron in Rio de Janeiro, Brazil, South America" class="mix category-brazil" data-order="2">
+				<img src="myImages/brazil-mural.JPG" alt="Visiting the Escadaria Selaron in Rio de Janeiro, Brazil, South America">
+			</a>
+
+			<a href="myImages/brazil-rio.JPG" data-lightbox="travel-images" data-title="Me posing in front of a mural of a neighborhood in Rio de Janeiro, Brazil" class="mix category-brazil" data-order="3">
+				<img src="myImages/brazil-rio.JPG" alt="Me posing in front of a mural of a neighborhood in Rio de Janeiro, Brazil">
+			</a>
+
+			<a href="myImages/chile-umich.JPG" data-lightbox="travel-images" data-title="Skiing in Púcon, Chile, South America" class="mix category-chile" data-order="4">
+				<img src="myImages/chile-umich.JPG" alt="Skiing in Púcon, Chile, South America">
+			</a>
+
+			<a href="myImages/chile-whitehouse.JPG" data-lightbox="travel-images" data-title="Visiting the Palacio de Armas (equivalent to their White House) in Santiago, Chile, South America" class="mix category-chile" data-order="5">
+				<img src="myImages/chile-whitehouse.JPG" alt="Visiting the Palacio de Armas (equivalent to their White House) in Santiago, Chile, South America">
+			</a>
+
+			<a href="myImages/chile-hike.JPG" data-lightbox="travel-images" data-title="Taking a hike in Valle de La Luna in San Pedro de Atacama dessert in Northern Chile, South America" class="mix category-chile" data-order="6">
+				<img src="myImages/chile-hike.JPG" alt="Taking a hike in Valle de La Luna in San Pedro de Atacama dessert in Northern Chile, South America">
+			</a>
+
+			<a href="myImages/chile-volcano.JPG" data-lightbox="travel-images" data-title="Visiting a volcano while in Púcon, Chile, South America" class="mix category-chile" data-order="7">
+				<img src="myImages/chile-volcano.JPG" alt="Visiting a volcano while in Púcon, Chile, South America">
+			</a>
+
+			<a href="myImages/chicago-wrigley-field.JPG" data-lightbox="travel-images" data-title="Showing my friends from Brazil the Chicago Cubs sports stadium" class="mix category-usa" data-order="8">
+				<img src="myImages/chicago-wrigley-field.JPG" alt="Showing my friends from Brazil the Chicago Cubs sports stadium">
+			</a>
+
+			<a href="myImages/chicago-bike.JPG" data-lightbox="travel-images" data-title="Me in Chicago on top of huge bike sculpture." class="mix category-usa" data-order="9">
+				<img src="myImages/chicago-bike.JPG" alt="Me in Chicago on top of huge bike sculpture.">
+			</a>
+
+			
+		</div>
+
+
+		<script src="js/lightbox.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+		<script>
+			var mixer = mixitup('.gallery');
+		</script>
+	</body>
+</html>
